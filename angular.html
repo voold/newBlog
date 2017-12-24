@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Felix Lambert</title>
+     <link rel="stylesheet" href="css/app.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+     <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">FELIX BLOG</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">/</a>
+                    </li>
+                    
+                    <li>
+                        <a href="angular.html">Javascript</a>
+                    </li>
+                    <li>
+                        <a href="technology.html">Technologies</a>
+                    </li>
+                    <li>
+                        <a href="philosophy.html">Philosophy</a>
+                    </li>
+                    <li>
+                        <a href="economiser.html">Economiser</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<div class="container">
+<div class="row page-wrap">
+    <!-- Post Content -->
+    <br/>
+    <br/>
+    <br/>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">javascript</h2>
+                    <p><a href="https://github.com/getify/You-Dont-Know-JS">From "You don't know JS"</a></p>
+                    <p><em>"In JavaScript, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Only code inside that function can access that function's scoped variables"</em>.</p>
+                    <p><em>"The difference between == and === is usually characterized that == checks for value equality and === checks for both value and type equality. However, this is inaccurate. The proper way to characterize them is that == checks for value equality with coercion allowed, and === checks for value equality without allowing coercion; === is often called "strict equality" for this reason".</em></p>
+                    <p><em>"ES5 added a "strict mode" to the language, which tightens the rules for certain behaviors. Generally, these restrictions are seen as keeping the code to a safer and more appropriate set of guidelines. Also, adhering to strict mode makes your code generally more optimizable by the engine. Strict mode is a big win for code, and you should use it for all your programs.</em></p>
+                    <p>
+                   <xmp>
+                    function foo() { .. }
+
+                    // `foo` function reference expression,
+                    // then `()` executes it
+                    foo();
+
+                    // `IIFE` function expression,
+                    // then `()` executes it
+                    (function IIFE(){ .. })();
+                    </xmp>
+                    </p>
+                    <p><em>"As you can see, listing the (function IIFE(){ .. }) before its executing () is essentially the same as including foo before its executing (); in both cases, the function reference is executed with () immediately after it."</em></p>
+                    <h2 class="section-heading">ECMA standard</h2>
+                    <p><a href="http://www.ecma-international.org/ecma-262/5.1/">ECMAScript® Language Specification</a></p>
+                    
+                    <h2 class="section-heading">Angular 1</h2>
+                    <br/>
+                    <h3>Links :</h3>
+                    <p>* A <a href="http://blog.revolunet.com/blog/2014/02/14/angularjs-services-inheritance/">tutorial</a> that explains how to build a Object Oriented framework and get closer to Angular 2 new architecture</p>
+                    <p>* A <a href="https://github.com/johnpapa/angular-styleguide">document</a> that explains how to write clean code in Angular.</p>
+                    <p>* <a href="https://karma-runner.github.io/0.8/plus/AngularJS.html">Karma</a>. A generator for testing AngularJS.</p>
+                    <p>* A nice <a href="https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make">tutorial</a> that explains what you shouldn't do in AngularJS.</p>
+                    <h3>Important : because of it's evolution, a lot of the angularJS tutorial get's depreciated very fast.</h3>
+                    <p>Source code : <a href="https://github.com/lemelon/cozy-tutorial-spa-angular-final">Source</a> </p>
+                    <h3>Discovering AngularJS</h3>
+                    <p>AngularJS is an Open-Source framework maintained by Google. One of the must loved feature is the <a href="https://docs.angularjs.org/tutorial/step_04">Two-way data binding</a>. It allows for a reduction in the amount of code required to create dynamic views.</p>
+                    <p>Another popular feature is directives and it will get even more important when <a href="https://angular.io">Angular 2.0</a> (the current version is v1.4.4) will come out, which allow developers to extend HTML by attaching special behaviors to parts of the DOM. For example, <a href="https://docs.angularjs.org/api/ng/directive/ngRepeat">ng-repeat</a> is a directive that allows developers to repeat an element, making it very handy for doing things like printing an array of items to the page. In addition to the directives that come with Angular, you can create your own, allowing for a great deal of flexibility in crafting behaviors for the UI.</p>
+                    <p>As a result, your application will be made of:</p>
+                    <p>* a template engine with binding expressions baked-in</p>
+                    <p>* a categorization of your application building blocks into several types : Controllers, Directives, Factories... </p>
+                    <h2 class="section-heading">Angular 2</h2>
+                    <h3>Links</h3>
+                    <p>* A <a href="https://www.youtube.com/watch?v=-8P8NO8X-mQ">conference</a> that will explain how Angular 2 will only be centered on Directives</p>
+                    <p>Angular 2 is still in alpha. It's changing pretty rapidely. So my tip will be at the moment to get to know how to use the following technologies :</p>
+                    <li><a href="http://learnangular2.com/es6/">ES6/Typescript</a> (next version of javascript)</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM</a> (know how to interact with it)</li>
+                    <li>AngularJS 1.x</li>
+                    <p>If you start having a good understanding of these technologies, you gonna have a pretty easy time learning angular 2.</p>
+                    <p>The DOM is getting much better know and Angular 2 ables you to act with it directly. </p>
+                    <p>Template Syntax/DOM compared to angular 1.x</p>
+                    <li>No more jqlite</li>
+                    <li>No more ng-click, ng-mousedown, ng-blur, etc.</li>
+                    <li>Relies directly with the DOM</li>
+                    <h3>First step : Hello World</h3>
+                    Link for this step : <a href="https://angular.io/docs/js/latest/quickstart.html">
+                        Quickstart
+                    </a>
+                    <br/>
+                    Source code : <a href="https://github.com/lemelon/first-step_angular2HelloWorld">
+                        Hello World
+                    </a>
+
+                    <h3>Second step : Add Typescript</h3>
+                    Source code : <a href="https://github.com/lemelon/second_step-addTypescript">Source</a>
+                    <h3>Third step : bookmark app</h3>
+                    Link for this step : <a href="https://github.com/lemelon/spa-angular2">Link
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+</div>
+    <hr>
+
+    
+
+    <!-- jQuery -->
+
+
+</body>
+
+</html>
